@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="450px"
+        android:text="Create Profile"
+        android:textColor="#000000"
+        android:textSize="100px" />
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="250dp"
+        android:layout_marginRight="40dp"
+        android:drawablePadding="5dp"
+        android:gravity="start"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/addRelation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="320dp"
+        android:layout_marginRight="40dp"
+        android:drawablePadding="5dp"
+        android:gravity="start"
+        android:hint="Relationship to User"
+        android:inputType="textEmailAddress"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+
+    <EditText
+        android:id="@+id/addDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="390dp"
+        android:layout_marginRight="40dp"
+        android:drawablePadding="5dp"
+        android:gravity="start"
+        android:hint="DOB"
+        android:inputType="text"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/addEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="460dp"
+        android:layout_marginRight="40dp"
+        android:drawablePadding="5dp"
+        android:gravity="start"
+        android:hint="Email"
+        android:inputType="text"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/addNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="530dp"
+        android:layout_marginRight="40dp"
+        android:drawablePadding="5dp"
+        android:gravity="start"
+        android:hint="Phone Number"
+        android:inputType="text"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <TextView
+        android:id="@+id/data"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="680dp"
+        android:focusable="true"
+        android:fontFamily="sans-serif"
+        android:text="Check existing users over"
+        android:textColor="#000000"
+        android:textSize="12dp" />
+
+    <TextView
+        android:id="@+id/database"
+        android:layout_width="wrap_content"
+        android:layout_height="23dp"
+        android:layout_marginStart="0dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="680dp"
+        android:layout_toEndOf="@+id/data"
+        android:layout_toRightOf="@+id/data"
+        android:clickable="true"
+        android:focusable="true"
+        android:fontFamily="sans-serif-medium"
+        android:onClick="user"
+        android:text=" here."
+        android:textColor="#00d9d9"
+        android:textSize="12dp" />
+
+    <Button
+        android:id="@+id/createBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="610dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:text="CREATE"
+        android:textAllCaps="false"
+        android:textColor="#d3d8e3"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/displayText"
+        android:layout_width="240dp"
+        android:layout_height="43dp"
+        android:text="TextView" />
+
+
+</RelativeLayout>
