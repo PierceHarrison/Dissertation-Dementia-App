@@ -40,7 +40,7 @@ class AudioActivity : AppCompatActivity() {
 
 //                mediaPlayer = MediaPlayer.create(applicationContext,R.raw.bensound)
                 //Set the mediaPlayer to a newly created mediaPlayer with a sound loaded
-                mediaPlayer = MediaPlayer.create(applicationContext,R.raw.skipinnish)
+                mediaPlayer = MediaPlayer.create(applicationContext,R.raw.bensound)
                 //Start the mediaPlayer to play the music
                 mediaPlayer.start()
                 //Toast output to tell the user that media is playing
