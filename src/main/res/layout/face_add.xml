@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".FaceAdd">
+
+
+    <TextView
+        android:id="@+id/createProfile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="93dp"
+        android:layout_marginRight="93dp"
+        android:text="Create Profile"
+        android:textColor="#000000"
+        android:textSize="100px" />
+
+    <EditText
+        android:id="@+id/addName"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/profilePick"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginRight="40dp"
+        android:drawablePadding="5dp"
+        android:gravity="start"
+        android:hint="Full Name"
+        android:inputType="text"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/addRelation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addName"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="40dp"
+        android:drawablePadding="5dp"
+        android:gravity="start"
+        android:hint="Relationship to User"
+        android:inputType="text"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/addDOB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addRelation"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="40dp"
+        android:drawablePadding="5dp"
+        android:gravity="start"
+        android:hint="DOB"
+        android:inputType="text"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/addEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addDOB"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="40dp"
+        android:drawablePadding="5dp"
+        android:gravity="start"
+        android:hint="Email"
+        android:inputType="text"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <EditText
+        android:id="@+id/addNum"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addEmail"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="40dp"
+        android:drawablePadding="5dp"
+        android:gravity="start"
+        android:hint="Phone Number"
+        android:inputType="text"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <Button
+        android:id="@+id/submitBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addNum"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#d3d8e3"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/closeSBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/submitBtn"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="15dp"
+        android:layout_marginEnd="40dp"
+        android:layout_marginRight="40dp"
+        android:onClick="goToFaceRemind"
+        android:text="Close"
+        android:textSize="18sp" />
+
+    <ImageView
+        android:id="@+id/profilePick"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@+id/createProfile"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="125dp"
+        android:layout_marginLeft="125dp"
+        android:layout_marginTop="13dp"
+        android:layout_marginEnd="125dp"
+        android:layout_marginRight="125dp"
+        app:srcCompat="@drawable/man" />
+
+
+</RelativeLayout>

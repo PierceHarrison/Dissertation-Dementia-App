@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    tools:context=".FaceAdd">
+
+    <TextView
+        android:id="@+id/eContact"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="62dp"
+        android:layout_marginEnd="6dp"
+        android:layout_marginRight="6dp"
+        android:text="Add Emergency Contact Number"
+        android:textColor="#000000"
+        android:textSize="72px" />
+
+    <EditText
+        android:id="@+id/addENumber"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/eContact"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="147dp"
+        android:layout_marginRight="40dp"
+        android:drawablePadding="5dp"
+        android:gravity="start"
+        android:hint="Contact Number"
+        android:inputType="text"
+        android:textColorHint="#8e9094"
+        android:textCursorDrawable="@null" />
+
+    <Button
+        android:id="@+id/submitEBtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/addENumber"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="26dp"
+        android:layout_marginRight="40dp"
+        android:gravity="center"
+        android:text="Submit"
+        android:textAllCaps="false"
+        android:textColor="#d3d8e3"
+        android:textSize="20dp" />
+
+    <TextView
+        android:id="@+id/eNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:freezesText="true"
+        android:text="TextView" />
+
+
+</RelativeLayout>

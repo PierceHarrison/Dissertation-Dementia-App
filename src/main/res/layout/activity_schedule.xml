@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Code taken from Tanu N Prabhu available at https://medium.com/@tanunprabhu95/to-do-list-application-using-kotlin-using-android-studio-546e74ac75aa-->
+<!--Adapted by Pierce Harrison-->
+<RelativeLayout      xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="Schedule"
+        android:textColor="@color/black"
+        android:textSize="26dp" />
+    <EditText
+        android:layout_below="@id/textView"
+        android:id="@+id/addItemText"
+        android:padding="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Add an Item"
+        android:textColorHint="@color/black"
+        android:textColor="@color/black"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout1"
+        android:orientation="horizontal"
+        android:layout_below="@id/addItemText"
+        android:padding="10dp">
+        <Button
+            android:id="@+id/add"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Add"/>
+        <Button
+            android:id="@+id/delete"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete"
+            android:layout_marginLeft="70dp"/>
+
+        <Button
+            android:id="@+id/clear"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="60dp"
+            android:text="Clear" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/linearLayout1"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="My Schedule"
+        android:textColor="@color/black"
+        android:textSize="20dp" />
+
+    <ListView
+        android:id="@+id/itemList"
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/textView1"
+        android:choiceMode="multipleChoice"/>
+
+</RelativeLayout>
